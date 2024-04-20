@@ -12,6 +12,22 @@
             Console.WriteLine(myNumber);
 
             string myNumberString = myNumber.ToString();
+
+
+            //Manipulating strings
+            //Concatenation
+            
+            
+            string firstName = "Ionel";
+            string lastName = "Popescu";
+            //Console.WriteLine(firstName +" "+ lastName);
+            //Interplation
+            //Console.WriteLine($"{lastName}{lastName}");
+            //Concatenation
+            string fullNameWithConcat = String.Concat(firstName," ", lastName);
+            Console.WriteLine(fullNameWithConcat);
+
+          
         }
     }
 }
