@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Globalization;
 using System.Text;
 namespace Laboratorul_6_Curs_Strings
 {
@@ -136,6 +137,26 @@ namespace Laboratorul_6_Curs_Strings
             string myFormatterString = String.Format("{0:F5}", d);
             Console.WriteLine(myFormatterString);
 
+
+            //DateTime
+           
+            DateTime myDate = DateTime.Now;
+            Console.WriteLine(myDate);
+
+
+            var myFormattedDate = String.Format("{0:dd.MM.yyyy HH:mm:ss}", myDate);
+            Console.WriteLine(myFormattedDate);
+
+            CultureInfo culture = new CultureInfo("ro-Ro");
+            Console.WriteLine(myDate.ToString("d", culture));
+
+            string myDate2 = " 01.05.2024";
+            var tommorow = myDate.AddDays(1);
+            //var yesterday = myDate2.AddD(-1); //this isn`t possible
+
+            //DateTime futureDate = DateTime.ParseExact(myDate2, "dd.MM.yyyy", CultureInfo.InvariantCulture);
+            //var yesterday = futureDate.AddDays(-1);
+           // DateTime
             
 
 
