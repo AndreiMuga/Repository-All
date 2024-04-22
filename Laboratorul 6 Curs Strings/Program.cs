@@ -105,7 +105,7 @@ namespace Laboratorul_6_Curs_Strings
 
 
             //
-
+/*
             StringBuilder stringBuilder = new StringBuilder(); //Facem string builder si stergem concatenarea //myCoolString += i.ToString(); de mai jos
             var stopWatch = new Stopwatch();
             string myCoolString = "Counting bottle";
@@ -120,15 +120,26 @@ namespace Laboratorul_6_Curs_Strings
                 
             }
             stopWatch.Stop();
-            Console.WriteLine(stopWatch.Elapsed.TotalSeconds.ToString());
+            Console.WriteLine(stopWatch.Elapsed.TotalSeconds.ToString());*/
 
 
             //Formatting Strings
             double d = 0.375;
-            string e = d.ToString("P3");
+            /*string e = d.ToString("P3");
             Console.WriteLine(e);
             string f = d.ToString("C5");
-            Console.WriteLine(f);
+            Console.WriteLine(f);*/
+
+            string infoToDisplay = d.ToString("P2");
+            Console.WriteLine(infoToDisplay);
+
+            string myFormatterString = String.Format("{0:F5}", d);
+            Console.WriteLine(myFormatterString);
+
+            
+
+
+
         }
     }
 }
